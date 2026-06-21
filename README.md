@@ -4,7 +4,7 @@ This repository contains the source code, datasets, notebooks, and experimental 
 
 The framework is composed of two complementary modules:
 
-- **Module I – Regex-Based Anonymization**: responsible for identifying and anonymizing structured personal data such as phone numbers, e-mail addresses, CPF/CNPJ identifiers, and banking information through regular expressions and specialized tokenizers.
+- **Module I – Regex-Based Anonymization**: responsible for identifying and anonymizing structured personal data such as phone numbers, e-mail addresses, CPF/CNPJ identifiers, and banking information through regular expressions.
 - **Module II – ReName Model**: responsible for identifying and correcting personal-name recognition in unstructured text using contextual and lexical information.
 
 Together, these modules provide support for the anonymization of sensitive information in textual datasets while preserving data utility.
