@@ -6,6 +6,7 @@ The framework is composed of two complementary modules:
 
 - **Module I – Regex-Based Anonymization**: responsible for identifying and anonymizing structured personal data such as phone numbers, e-mail addresses, CPF/CNPJ identifiers, and banking information through regular expressions.
 - **Module II – ReName Model**: responsible for identifying and correcting personal-name recognition in unstructured text using contextual and lexical information.
+- **Módulo III – Anonimização Baseada em Grandes Modelos de Linguagem (LLMs)**: responsável por identificar nomes pessoais em textos não estruturados por meio de modelos de linguagem executados localmente, utilizando diferentes estratégias de engenharia de prompts e configurações de pipelines para avaliar o desempenho dos modelos na identificação de nomes pessoais.
 
 Together, these modules provide support for the anonymization of sensitive information in textual datasets while preserving data utility.
 
