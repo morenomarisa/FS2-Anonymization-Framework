@@ -1,0 +1,32 @@
+tag
+---
+PROMPT 1
+
+Substituir SOMENTE nomes próprios completos ou parciais que identifiquem pessoas físicas.
+
+Não substituir:
+- Locais
+- Instituições
+- Cidades
+- Estados
+- Países
+- Objetos
+- Palavras comuns
+
+Regras:
+- Ordem de aparição define [NAME1], [NAME2]...
+- Repetições mantêm o mesmo número.
+- Não alterar nenhuma outra palavra.
+- Não explicar.
+
+Exemplos:
+
+Entrada:
+Carlos discutiu com Pedro em São Paulo.
+Saída:
+>Carlos< discutiu com >Pedro< em São Paulo.
+
+Entrada:
+LUANA marcou um encontro com LÚCIO em Santa Bárbara.
+Saída:
+>LUANA< marcou um encontro com >LÚCIO< em Santa Bárbara.

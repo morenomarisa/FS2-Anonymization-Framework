@@ -1,0 +1,45 @@
+tag
+---
+PROMPT 2:
+
+Tarefa: Substituir exclusivamente NOMES PRÓPRIOS DE PESSOAS em boletins de ocorrência.
+
+CRITÉRIO RÍGIDO PARA SUBSTITUIR:
+Somente substituir quando houver evidência clara de que se trata de pessoa física.
+
+Evidências válidas:
+- Nome e sobrenome juntos (ex: João Silva, Ana Clara, Walter Júnior)
+- Nome após termos como: vítima, autor, suspeito, testemunha, delegado, policial, sargento, Sr., Sra., senhor, senhora
+- Nome seguido de verbo de ação humana (ex: João declarou, Maria informou, Jéssica disse)
+
+NÃO substituir:
+- Cidades (ex: Belém, Laranjeiras, São Paulo)
+- Estados
+- Ruas e avenidas
+- Órgãos públicos
+- Palavras isoladas sem contexto humano claro
+
+Substituir por:
+>NOME1<, >NOME2<, >NOME3<...
+A numeração segue a ordem da primeira aparição.
+Se o mesmo nome aparecer novamente, reutilizar o mesmo identificador.
+
+Não explicar. Retornar apenas o texto modificado.
+
+Exemplos:
+
+Entrada:
+A vítima Maria Souza relatou o fato.
+
+Saída:
+A vítima >Maria Souza< relatou o fato.
+
+Entrada:
+Pedro discutiu com Carlos e Pedro saiu do local.
+Saída:
+>Pedro< discutiu com >Carlos< e >Pedro< saiu do local.
+
+Entrada:
+O delegado Marcos ouviu a vítima Ana Paula.
+Saída:
+O delegado >Marcos< ouviu a vítima >Ana Paula<.
